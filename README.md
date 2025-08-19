@@ -1,20 +1,28 @@
-**Simple Movie Recommendation System**
+# Notebooks
 
-Using the TMDB 5000 dataset, this project implements a content-based recommender in Python:
+**A curated collection of machine learning & deep learning Jupyter notebooks (projects developed by me) — covering Logistic Regression, Movie Recommendation, and Re-identification projects.**
 
-1. **Data Preprocessing**
+---
 
-   * Load and merge “movies” and “credits” CSVs on `movie_id`
-   * Parse JSON fields (`genres`, `keywords`, `cast`, `crew`) into lists
-   * Extract top-3 cast members and director; clean overview text
-   * Combine (`genres_list + keywords_list + cast_list + [director] + overview_list`) into a single `merged_details` string per movie
+## ​ Repository Overview
 
-2. **Vectorization & Similarity**
+| Notebook | Description |
+|----------|-------------|
+| `logistic_regression.ipynb` | Demonstrates logistic regression on a classification dataset (e.g., binary outcomes) — covering data preprocessing, model training, evaluation, and visualizations. |
+| `movie_recommendation.ipynb` | Implements a content-based movie recommender using the TMDB 5000 dataset. Includes data preprocessing, feature extraction (genres, cast, crew, overview), vectorization, cosine similarity, and recommendation function. |
+| `reidentification-in-a-single-feed.ipynb` | Explores person re-identification within a single video feed — likely involving feature extraction and similarity metrics for identity matching. |
 
-   * Convert `merged_details` into a document-term matrix using `CountVectorizer` (or `TfidfVectorizer`)
-   * Compute pairwise cosine similarity between all movie vectors
+---
 
-3. **Recommendation Function**
+##  :rocket Features
 
-   * Map each title to its DataFrame index
-   * Given a title, find its similarity scores, sort descending, and return the top N most similar movies
+- Hands-on learning experience with common ML and DL tasks
+- End-to-end workflow in each notebook: data cleaning → feature engineering → model building → evaluation
+- Worked examples using real datasets & practical libraries (e.g. Pandas, Scikit-learn, CountVectorizer)
+- Easy-to-understand narrative and visual outputs within interactive notebooks
+
+---
+
+##  Setup & Getting Started
+
+*Coming Soon*
